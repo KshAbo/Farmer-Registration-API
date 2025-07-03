@@ -24,4 +24,9 @@ public class FarmerInfoServiceImpl implements FarmerInfoService {
     public Optional<FarmerInfo> getFarmerInfoById(Long farmerId) {
         return farmerInfoRepository.findById(farmerId);
     }
+
+    @Override
+    public void deleteFarmerInfoById(Long farmerId) {
+        farmerInfoRepository.deleteById(farmerId);
+    }
 }

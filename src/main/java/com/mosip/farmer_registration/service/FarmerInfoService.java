@@ -10,4 +10,6 @@ public interface FarmerInfoService {
 
     Optional<FarmerInfo> getFarmerInfoById(Long farmerId);
 
+    void deleteFarmerInfoById(Long farmerId);
+
 }
